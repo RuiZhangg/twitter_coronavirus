@@ -11,12 +11,14 @@ The dataset consists of all geotagged tweets from 2020, stored in daily zip file
 All scripts are placed under the `src` folder.  `-h`  flag is available for detailed usage instructions.
 
 `map.py` extracts language and country-specific hashtag counts from tweets using MapReduce. `reduce.py`  aggregates mapped data across multiple days. `visualize.py`  generates bar graphs to display top language or country for each hashtag from aggregated data. Following are some example plots:
+
 <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; text-align: center;">
     <img src="img/coronavirus_country.png" width="48%">
     <img src="img/coronavirus_lang.png" width="48%">
     <img src="img/korean_country.png" width="48%">
     <img src="img/korean_lang.png" width="48%">
 </div>
+
 `alternative_reduce.py` produces time series plots for given hashtag trends over the year according to mapped data.
 
 <img src=img/trend.png />
